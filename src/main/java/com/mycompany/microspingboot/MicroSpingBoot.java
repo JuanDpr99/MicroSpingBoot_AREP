@@ -15,9 +15,10 @@ import java.net.URISyntaxException;
  */
 public class MicroSpingBoot {
 
-    public static void main(String[] args) throws IOException, URISyntaxException, InvocationTargetException {
+    public static void main(String[] args) throws IOException, URISyntaxException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         System.out.println("Starting MicroSpringBoot");
         
+        HttpServer.staticfiles("/webroot");
         HttpServer.runServer(args);
     }
 }

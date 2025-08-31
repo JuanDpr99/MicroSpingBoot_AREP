@@ -20,8 +20,8 @@ public class GreetingController {
 	private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/greeting")
-	public static String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+	public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         //public static String greeting() {
 		return "Hola "+ name;
-	}
+        }
 }
