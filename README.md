@@ -45,7 +45,24 @@ src/
 ```
 **Clonar y compilar**
 ```bash
-git clone https://github.com/<tu-usuario>/<tu-repo>.git
-cd <tu-repo>
-find src/main/java -name "*.java" | xargs javac -d target/classes
+git clone https://github.com/JuanDpr99/MicroSpingBoot_AREP.git
+cd MicroSpingBoot_AREP
+mvn clean compile
 ```
+## Uso - Ejemplos de Endpoints
+```bash
+- http://localhost:35000/app/greeting?name=Juan
+- http://localhost:35000/img/logo.png
+- http://localhost:35000/index.html
+- java -cp target/classes com.mycompany.microspingboot.MicroSpingBoot com.mycompany.microspingboot.examples.GreetingController
+- java -cp target/classes com.mycompany.microspingboot.MicroSpingBoot
+```
+# Pruebas
+<p align="center">
+<img width="530" height="131" alt="image" src="https://github.com/user-attachments/assets/ee3ab053-9d9d-4b58-b181-038ba3023580" />
+<img width="728" height="225" alt="image" src="https://github.com/user-attachments/assets/7dc12181-8468-40ba-8402-33de851f540f" />
+<img width="807" height="310" alt="image" src="https://github.com/user-attachments/assets/64756939-0668-407f-a51e-1268960beaa7" />
+</p>
+
+
+
